@@ -1,17 +1,77 @@
+header {
+  display: flex;
+  align-items: stretch;
+  height: 60px; /*To adjust the height of the header. */
+}
+
+header img {
+  height: 60px; /* To adjust the height on the main header img*/
+}
+
+.logo {
+  height: 60px; /*To adjust the height of the logo. */
+}
+
+.social-links a {
+  min-width: 40px; /*To adjust the minimum width for the social links*/
+  max-width: 50px;
+  height: 60px; /*To adjust the height of the social links. */
+  background-color: grey; /* I aimed to have this section to have a slight colour backdrop*/
+  display: inline-block;
+}
+
+.menu-button {
+  max-height: 100%; /*To adjust the height of the menu-button. */
+}
+
+.spacer {
+  flex-grow: 1; /*Spacer sets the spacing between text*/
+}
+
+#nav-lists {
+  margin: 0; /*This is used so that the header could travel to the top of the webpage and not have any unwanted gaps inbetween the elements. */
+  left: 100%;
+  top: 0; /*The measurement from the top of the web page*/
+  width: 100vw;
+  height: 100vh; /*To adjust the height of the nav-lists. */
+  background-color: rgba(0, 0, 0, 0.6); /* I aimed to have this section to have a slight colour backdrop by adding the 'rgba' color element it increases the opacity*/
+  transition: left .2s;
+  list-style: none;
+}
+
+#nav-lists._Menus-show {
+  left: 0%;
+}
+/*All of the css above it written courtesy of my lecturer Thom Corah, I have supported his input of css wiht notes,
+ thanks to him I was able to retain some of the structure to the homepage.*/
+
+.Button a:link, .Button a:visited {
+  background-color: #333333; /* I aimed to have this section to have a slight colour backdrop*/
+  color: #white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.Button a:hover, .Button a:active {background-color: #grey;
+}
+
 #Headers {
   color: #E0D0C1;
-  text-align: center;
-  font-size: 20px;
-  font-family: "Monaco", monospace;
+ text-align: center;
+ font-size: 20px;
+ font-family: "Monaco", monospace;
 }
+
+
 
 img {
   max-width: 100%;
 }
 
 .column2 {
-  float: left;
-  width: 33.33%;
+  float: left; /*So that*/
+  width: 33.33%; /*The max width divided by 3 in order to fit*/
 }
 
 .row2:after {
@@ -28,7 +88,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 100%; /*To adjust the width for the Album IMG to 100%*/
 }
 
 .info {background-color: #A1B0AB;
@@ -41,7 +101,7 @@ color: #985F99
 
 .column {
   flex: 50%;
-  padding: 5px;
+  padding: 5px;/*This is used to increase padding between the content and the edge of the page*/
 }
 
 @media screen and (max-width: 600px) {
@@ -55,7 +115,7 @@ color: #white;}
 footer: {
   background-color: #rgb(45,44,44);
   font-size: 18px;
-  color: #white
+  color: #white /* I aimed to have this section to have a slight colour backdrop*/
   position: center;
 }
 
@@ -80,28 +140,28 @@ table{
 }
 
 .table {
-  background-color: #grey;
+  background-color: #grey; /* I aimed to have this section to have a slight colour backdrop*/
   color: #black
 }
 
 td, th {
   text-align: left;
   border: 1px solid #AAACB0;
-  padding: 8px;
+  padding: 8px; /*This is used to increase padding between the content and the edge of the page*/
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #dddddd; /* I aimed to have this section to have a slight colour backdrop*/
 }
 
 .NewAlbum img {max-width: 100%}
 
 nav {text-align: right;
-background-color: #AAACB0
+background-color: #AAACB0 /* I aimed to have this section to have a slight colour backdrop*/
 }
 
 .fa {
-  padding: 20px;
+  padding: 20px; /*This is used to increase padding between the content and the edge of the page*/
   font-size: 30px
   width: 50px;
   text-align: center;
@@ -112,26 +172,26 @@ background-color: #AAACB0
 
 .fa-facebook {
   background: #333333;
-  color: #white;
+  color: #white; /*The color of the text of the fa-facebook*/
 }
 
 .fa-twitter {
   background: #333333;
-  color: #white;
+  color: #white; /* I aimed to have this section to have a slight colour backdrop*/
 }
 
 .fa-instagram {
   background-color: #333333;
-  color: #white;
+  color: #white; /* I aimed to have this section to have a slight colour backdrop*/
 }
 
 .fa-youtube {
   background-color: #333333;
-  color: #white;
+  color: #white; /* I aimed to have this section to have a slight colour backdrop*/
 }
 
 #Title {
-  color: #7FB069;
+  color: #7FB069; /* I aimed to have this section to have a slight colour backdrop*/
   text-align: center;
   font-size: 42px;
   font-family: "Monaco"; monospace;
@@ -141,7 +201,7 @@ background-color: #AAACB0
 }
 
 #AboutLogicIMG1 {
-  color: #white;
+  color: #white; /* I aimed to have this section to have a slight colour backdrop*/
   text-align: justify;
   font-size: 18px
 }
@@ -162,7 +222,7 @@ background-color: #AAACB0
   max-width: 650px;
   position: relative;
   margin: auto;
-  padding: 10px
+  padding: 10px; /*This is used to increase padding between the content and the edge of the page*/
 }
 
 .mySlides {display: none;}
@@ -175,9 +235,9 @@ background-color: #AAACB0
   position: absolute;
   top: 40%;
   width: auto;
-  padding: 16px;
+  padding: 16px; /*This is used to increase padding between the content and the edge of the page*/
   margin-top: -50px;
-  color: #white;
+  color: #white; /* I aimed to have this section to have a slight colour backdrop*/
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -196,17 +256,17 @@ background-color: #AAACB0
 }
 
 .numbertext {
-  color: #black;
+  color: #black; /* I aimed to have this section to have a slight colour backdrop*/
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 8px 12px; /*This is used to increase padding between the content and the edge of the page*/
   top: 0;
 }
 
 .caption-container {
   text-align: center;
   background-color: #black;
-  padding: 2px 16px;
-  color: #white;
+  padding: 2px 16px; /*This is used to increase padding between the content and the edge of the page*/
+  color: #white; /* I aimed to have this section to have a slight colour backdrop*/
 }
 
 .row:after {
@@ -236,14 +296,15 @@ background-color: #AAACB0
 }
 
 body{
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: sans-serif; /*To help support the choice of font-family*/
+  font-size: bold; /*This tell the browser how thick the font should be*/
+  margin: 0; /*To tell the browser how far into the screen it should be placed*/
+  padding: 0; /*This is used to increase padding between the content and the edge of the page*/
 }
 
 .container {
-  height: 60px;
-  background-color: #333333;
+  height: 60px; /*To adjust the height of the .container*/
+  background-color: #333333; /* I aimed to have this section to have a slight colour backdrop*/
   display: -webikit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,7 +318,7 @@ body{
 
 .container .logo {
   max-width: 250px;
-  padding: 0 10px;
+  padding: 0 10px; /*This is used to increase padding between the content and the edge of the page*/
   overflow: hidden;
 }
 
@@ -269,7 +330,7 @@ body{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 60px;
+  height: 60px; /*To adjust the height of the .container .logo. */
 }
 
 .container .logo a img {
@@ -283,7 +344,7 @@ body{
   display: flex;
   -ms-flex-wrap: wrap;
   flex: 1;
-  padding: 0 10px;
+  padding: 0 10px; /*This is used to increase padding between the content and the edge of the page*/
 }
 
 .container .navbar ul {
@@ -295,23 +356,23 @@ body{
   list-style: wrap;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0; /*This is used to increase padding between the content and the edge of the page*/
 }
 
 .container .navbar ul li a {
   tex-decoration: none;
-  color: #999999;
+  color: #999999; /* I aimed to have this section to have a slight colour backdrop*/
   font-size: 14px;
   text-transform: uppercase;
   display: block;
   height: 60px;
   line-height: 60px;
   cursor: pointer;
-  padding: 0 10px;
+  padding: 0 10px; /*This is used to increase padding between the content and the edge of the page*/
 }
 
 .container .navbar ul li a:hover {
-  color: #ffffff;
+  color: #ffffff; /* I aimed to have this section to have a slight colour backdrop*/
   background-color: rgba(23, 23, 23, 0.9);
 }
 
@@ -319,12 +380,12 @@ body{
   font-size: 40px;
   display: inline-block;
   border: 1px solid #cccccc
-  padding: 0 10px;
+  padding: 0 10px; /*This is used to increase padding between the content and the edge of the page*/
   cursor: pointer;
 }
 
 .container .navbar .icon-bar {
-  padding: 18px 8px;
+  padding: 18px 8px; /*This is used to increase padding between the content and the edge of the page*/
   width: 50px;
   height: 60px;
   -webkit-box-orient: vertical;
@@ -383,11 +444,11 @@ body{
 }
 
 .container .navbar ul li a {
-  padding: 10px;
+  padding: 10px; /*This is used to increase padding between the content and the edge of the page*/
   font-size: 16px;
   height: auto;
   line-height: normal;
-  color: #FFFFFF;
+  color: #FFFFFF; /* I aimed to have this section to have a slight colour backdrop*/
 }
 
 .container navbar ul close {
@@ -407,5 +468,5 @@ display: flex;
 .body {
   max-width: 700px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px; /*This is used to increase padding between the content and the edge of the page*/
 }
