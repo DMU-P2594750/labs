@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> <!--By setting the language to english it can be
+  understood by the vast majority of the users on the internet-->
+ <head>
+   <meta charset="utf-8"> <!--This makes the website mobile friendly-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--By adding a <meta> element, this tells the browser to match the website
+   dimensions with the width and size of teh device. This also tells the browser to rescale to the appropriate size-->
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Albums</title> <!--This is the title of the webpage-->
+   <link rel="stylesheet" href="Css/style.css" type="text/css">
+   <!--Below is a link to the css stylesheet that has been written for the website-->
+   <link rel="stylesheet" href="https://fonts.google.com/specimen/Righteous">
+  </head>
+  <body>
+    <div class="container">
+    <div class="logo">
+    <a href="homepage.html"><img src="Image/logic-logo-site.png" alt="logo"></a>
+    </div>
+    <div class="navbar">
+    <div class="icon-bar" onclick="Show()">
+      <i></i>
+        <i></i>
+          <i></i>
+        </div>
+          <ul id="nav-lists"> <!--By making an id navigation listing it allows
+            the user to transfer their page over to another page from the inbedded html links given-->
+          <li class="close"><span onclick="Hide()">x</span></li>
+          <li><a href="homepage.html">Main</a><li>
+          <li><a href="tourdates.html">Tour Dates</a><li>
+          <li><a href="albums.html">Albums</a><li>
+          <li><a href="about.html">About</a><li>
+          <li><a href="store.html">Store</a><li>
+          </ul>
+        </div>
+      </div>
+      <!--This is the script to enable the menu to work correctly-->
+      <script>
+        var navlist = document.getElementById("nav-lists");
+        function Show() {
+          navList.classList.add("_Menus-show");
+        }
+        function Hide() {
+          navList.classList.remove("_Menus-show");
+        }
+      </script>
+      <nav> <!-- This social media navigation bar allows the user to browse the social media platforms that the artist has set up-->
+        <a href="https://www.youtube.com/channel/UC4EDjfs78AhVgpBqE3WFGJg" target="_blank" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/logic" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/logic" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/logic301"  target="_blank" class="fa fa-twitter"></a>
+      </nav> <!--By setting the layout like this allows the sections to be easily viewed and interacted with-->
+
+     <article>
+       <section id="Title">
+         <h1>Albums</h1>
+       </section>
+       <seciton>
+         <div class="slideshow-container"> <!--Below is a slideshow of images from all the albums Logic has released in  a click-to-scroll format-->
+          <div class="mySlides">
+           <div class="numbertext">1 / 9</div>
+           <a href="NoPressure.html"><img src="Image/No_Pressure.jpg" alt="No Pressure" style="width:100%">
+          </div>
+          <!--These links are in a <slideshow> class so that the user can scroll through the pictures with clickable left and right button links-->
+          <div class="mySlides">
+           <div class="numbertext">2 / 9</div>
+           <a href="ConfessionsOfADangerousMind.html"><img src="Image/Confessions_Of_A_Dangerous_Mind.jpg" alt="Confessions Of A Dangerous Mind" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+           <div class="numbertext">3 / 9</div>
+           <a href="Supermarket.html"><img src="Image/Supermarket.jpg" alt="Supermarket" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+           <div class="numbertext">4 / 9</div>
+           <div href="YSIV.html"><img src="Image/YSIV.jpeg" alt="YSIV" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+           <div class="numbertext">5 / 9</div>
+           <div href="BobbyTarantino2.html"><img src="Image/Bobby_Tarantino_II.jpg" alt="Bobby Tarantino II" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+           <div class="numbertext">6 / 9</div>
+           <div href="Everybody.html"><img src="Image/Everybody.jpg" alt="Everybody" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 9</div>
+            <div href="BobbyTarantino.html"><img src="Image/Bobby_Tarantino.jpg" alt="Bobby Tarantino" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 9</div>
+            <div href="TheIncredibleTrueStory.html"><img src="Image/The_Incredible_True_Story.jpg" alt="The Incredible True Story" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">9 / 9</div>
+            <div href="UnderPressure.html"><img src="Image/Under_Pressure.jpg" alt="Under Pressure" style ="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--This is to enable the user to move to the previous image by clicking a slider icon-->
+          <a class="next" onclick="plusSlides(1)">&#10095;</a> <!--This is to enable the user to move forward onto the next image by clicking a slider icon-->
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+          <div class="column">
+          <img class="demo cursor" src="Image/No_Pressure.jpg" style="width:100%" onclick="currentSlide(1)" alt="No Pressure">
+        </div>
+
+          <div class="column">
+          <img class="demo cursor" src="Image/Confessions_Of_A_Dangerous_Mind.jpg" style="width:100%" onclick="currentSlide(2)" alt="Confessions Of A Dangerous Mind">
+        </div>
+
+          <div class="column">
+          <img class="demo cursor" src="Image/Supermarket.jpg" style="width:100%" onclick="currentSlide(3)" alt="Supermarket">
+        </div>
+
+          <div class="column">
+          <img class="demo cursor" src="YSIV.jpeg" style="width:100%" onclick="currentSlide(4)" alt="YSIV">
+        </div>
+
+          <div class="column">
+          <img class="demo cursor" src="Image/Bobby_Tarantino_II.jpg" style="width:100%" onclick="currentSlide(5)" alt="Bobby Tarantino II">
+        </div>
+
+          <div class="column">
+          <img class="demo cursor" src="Image/Everybody.jpg" style="width:100%" onclick="currentSlide(6)" alt="Everybody">
+        </div>
+
+          <div class="column">
+          <img class="demo cursor" src="Image/Bobby_Tarantino.jpg" style="width:100%" onclick="currentSlide(7)" alt="Bobby Tarantino">
+        </div>
+
+          <div class="column">
+          <img class="demo cursor" src="Image/The_Incredible_True_Story.jpg" style="width:100%" onclick="currentSlides(8)" alt="The Incredible True Story">
+        </div>
+
+          <div class="column">
+          <img class="demo cursor" src="Image/Under_Pressure.jpg" style="width:100%" onclick="currentSlides(9)" alt="Under Pressure">
+        </div>
+      </div>
+    </div>
+<!--These controls identify the current image for the album and the next and previous selection tool-->
+<script>
+ var slideIndex = 1;
+ showSlides(slideIndex);
+
+ function plusSlides(n) {
+ showSlides(slideIndex += n);
+}
+
+ function currentSlide(n) {
+   showSlides(slideSlides = n);
+ }
+
+ function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("demo");
+   var captionText = document.getElementsById("caption");
+ }
+
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none"; }
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace("active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += "active";
+captionText.innerHTML = dots[slidesIndex-1].alt;
+</script>
+</section>
+<!--Below is a table showcasing the albums released, what year they came out and also a link on a spotify.html to view the album-->
+<!--By using the <class> element it allows me to place words in a certain order in a table format-->
+<table class="table">
+  <tr>
+    <th>Album</th>
+    <th>Year</th>
+    <th>Album Links</th>
+  </tr>
+  <tr>
+    <td>No Pressure</td>
+    <td>2020</td>
+    <td><a href="https://open.spotify.com/album/5pF05wJrbrIvqunE41vWP8">Click here to find it on Spotify!</td>
+  </tr>
+
+  <tr>
+    <td>Confessions Of A Dangerous Mind</td>
+    <td>2019</td>
+    <td><a href="https://open.spotify.com/album/6GeHCNwwqMMUrpxuGTRYcf">Click here to find it on Spotify!</td>
+  </tr>
+
+  <tr>
+    <td>Supermarket</td>
+    <td>2019</td>
+    <td><a href="https://open.spotify.com/album/7C5J8fG34IbOKe2pQPq9SU">Click here to find it on Spotify!</td>
+  </tr>
+
+  <tr>
+    <td>YSIV</td>
+    <td>2018</td>
+    <td><a href="https://open.spotify.com/album/1lyjkFTJ6yxUyNYysWVBo9">Click here to find it on Spotify!</td>
+  </tr>
+
+  <tr>
+    <td>Bobby Tarantino II</td>
+    <td>2018</td>
+    <td><a href="https://open.spotify.com/album/4F87p1aiFwHeU4uu65MaPV">Click here to find it on Spotify!</td>
+  </tr>
+
+  <tr>
+    <td>Everybody</td>
+    <td>2017</td>
+    <td><a href="https://open.spotify.com/album/1HiN2YXZcc3EjmVZ4WjfBk">Click here to find it on Spotify!</td>
+  </tr>
+
+  <tr>
+    <td>Bobby Tarantino</td>
+    <td>2016</td>
+    <td><a href="https://open.spotify.com/album/0WMr3ulx5Mzi1B3C8LsHVA">Click here to find it on Spotify!</td>
+  </tr>
+
+  <tr>
+    <td>The Incredible True Story</td>
+    <td>2015</td>
+    <td><a href="https://open.spotify.com/album/5dOpbgAmJeyoakKQ0QLWkR">Click here to find it on Spotify!</td>
+  </tr>
+
+  <tr>
+    <td>Under Pressure</td>
+    <td>2014</td>
+    <td><a href="https://open.spotify.com/album/1Mk7Lei0Ra3hawezqmad5V">Click here to find it on Spotify!</td>
+  </tr>
+</table>
+</section>
+</article>
+</body>
+   <!--By adding a footer element it notifies the user of the creator-->
+   <footer>TECH1015 Multimedia Coursework 2 created by Joshua Nicholson (P2594750)</footer>
+    </html>

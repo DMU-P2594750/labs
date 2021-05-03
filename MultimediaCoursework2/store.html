@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--This informs the browser that it is an HTML file-->
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8"> <!--This makes the website mobile friendly-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--By adding a <meta> element, this tells the browser to match the website
+   dimensions with the width and size of teh device. This also tells the browser to rescale to the appropriate size-->
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Store</title> <!--This is the title of the webpage-->
+   <link rel="stylesheet" href="Css/style.css" type="text/css">
+   <!--Below is a link to the css stylesheet that has been written for the website-->
+   <link rel="stylesheet" href="https://fonts.google.com/specimen/Righteous">
+  </head>
+  <body>
+    <div class="container">
+    <div class="logo">
+    <a href="homepage.html"><img src="Image/logic-logo-site.png" alt="logo"></a>
+    </div>
+    <div class="navbar">
+    <div class="icon-bar" onclick="Show()">
+      <i></i>
+        <i></i>
+          <i></i>
+        </div>
+          <ul id="nav-lists"> <!--By making an id navigation listing it allows
+            the user to transfer their page over to another page from the inbedded html links given-->
+          <li class="close"><span onclick="Hide()">x</span></li>
+          <li><a href="homepage.html">Main</a><li>
+          <li><a href="tourdates.html">Tour Dates</a><li>
+          <li><a href="albums.html">Albums</a><li>
+          <li><a href="about.html">About</a><li>
+          <li><a href="store.html">Store</a><li>
+          </ul>
+        </div>
+      </div>
+<!--This is the script to enable the menu to work correctly-->
+    <script>
+      var navlist = document.getElementById("nav-lists");
+      function Show() {
+        navList.classList.add("_Menus-show");
+      }
+      function Hide() {
+        navList.classList.remove("_Menus-show");
+      }
+    </script>
+    <nav> <!-- This social media navigation bar allows the user to browse the social media platforms that the artist has set up-->
+      <a href="https://www.youtube.com/channel/UC4EDjfs78AhVgpBqE3WFGJg" target="_blank" class="fa fa-youtube"></a>
+      <a href="https://www.instagram.com/logic" target="_blank" class="fa fa-instagram"></a>
+      <a href="https://www.facebook.com/logic" target="_blank" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/logic301"  target="_blank" class="fa fa-twitter"></a>
+    </nav> <!--By setting the layout like this allows the sections to be easily viewed and interacted with-->
+
+<article>
+  <section id="Title">
+    <h1>Merchandise Stores</h1>
+  </section>
+
+    <section>
+      <div class="row">
+      <div class="column">
+      <a href="https://www.logicmerch.com/">
+        <img src="Image/logicmerch.jpg" alt="Official Merchandise" width="100%"></a>
+      </div>
+
+      <div class="column">
+      <a href="https://www.merchbar.com/r-b-hiphop-rap/logic">
+        <img src="logicmerhbar/jpg" alt="Merchbar" width="100%"></a>
+      </div>
+      </div>
+    </section>
+    <section id="AboutArtist">
+      <p>Feel free to click on either of these store links! One will take you to the official logic store and the other will take you to the merchbar.com Logic page. </p>
+    </section>
+  </body>
+  <!--By adding a footer element it notifies the user of the creator-->
+  <footer>TECH1015 Multimedia Coursework 2 created by Joshua Nicholson (P2594750)</footer>
+   </html>
